@@ -17,13 +17,12 @@ xhr.open('GET', requestURL);
             listing.insertAdjacentHTML("beforeend",
             `<div class="row bg-2 gy-5 mx-auto px-0 rounding h-75" onclick="display(this)" value="${counter}">
                 <div class="col-4 open_modal m-0 p-4">
-                <div style="background-image:url(${baseSrc}${element.dogImage});" class="square rounding">
+                    <div style="background-image:url(${baseSrc}${element.dogImage});" class="square rounding"></div>
                 </div>
+                <div class="col-8 align-self-center my-0">
+                    <h1>${element.title}</h1>
+                    <h5>${element.sex}</h5>
                 </div>
-            <div class="col-8 align-self-center my-0">
-                <h1>${element.title}</h1>
-                <h5>${element.sex}</h5>
-            </div>
             </div>`);
             counter++;
         });
