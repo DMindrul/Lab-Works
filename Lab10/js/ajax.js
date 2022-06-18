@@ -3,7 +3,6 @@ const baseSrc = 'https://usersdogs.dmytrominochkin.cloud';
 let body = $('body').get(0);
 
 let counter = 0;
-// ajax
 $.ajax(requestURL,{
     success: function(data){
 
