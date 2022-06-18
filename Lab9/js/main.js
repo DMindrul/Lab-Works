@@ -41,14 +41,14 @@ function display(elm) {
          console.error(xhr.response)
      }
     else{
-    document.getElementById("link").style = 'background-image:url('+ baseSrc + xhr.response[fetched].dogImage +');';
-    document.getElementById("name").innerHTML = xhr.response[fetched].title;
-    document.getElementById("sex").innerHTML = xhr.response[fetched].sex;
-    document.getElementById("age").innerHTML = xhr.response[fetched].age;
-    document.getElementById("description").innerHTML = xhr.response[fetched].description;
-    modal.classList.add('modal_vis');
-    body.classList.add('body_block');
-    }
+            document.getElementById("link").style = 'background-image:url('+ baseSrc + xhr.response[fetched].dogImage +');';
+            document.getElementById("name").innerHTML = xhr.response[fetched].title;
+            document.getElementById("sex").innerHTML = xhr.response[fetched].sex;
+            document.getElementById("age").innerHTML = xhr.response[fetched].age;
+            document.getElementById("description").innerHTML = xhr.response[fetched].description;
+            modal.classList.add('modal_vis');
+            body.classList.add('body_block');
+        }
     }
     xhr.send();
 }
